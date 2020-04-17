@@ -1,0 +1,203 @@
+/*NAVBAR*/
+.navbar {
+	position: relative;
+	z-index: 1;
+}
+.navbar-brand {
+	font-family: Channel;
+	font-size: 25px;
+}
+.nav-link {
+	text-transform: uppercase;
+	margin-right: 30px;
+}
+
+/*JUMBOTRON*/
+.jumbotron {
+	background-image: url('img/bg.jpg');
+	background-size: cover;
+	height: 640px;
+	text-align: center;
+	position: relative;
+}
+.jumbotron .container {
+	position: relative;
+	z-index: 1;
+}
+.jumbotron::after {
+	content: '';
+	display: block;
+	height: 80%;
+	width: 100%;
+	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba (0,0,0,0));
+	position: absolute;
+	bottom: 0;
+
+}
+.jumbotron .display-4 {
+	color: white;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1x rgba(0, 0, 0, 1);
+}
+.jumbotron .display-4 span {
+	font-weight: 500;
+}
+.jumbotron .mulai {
+	margin-top: 30px;
+	background-color: transparent;
+	border: 3px solid white;
+	color: white;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	font-weight: 400;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.jumbotron .mulai:hover {
+	margin-top: 30px;
+	background-color: white;
+	color: black;
+	text-shadow: 0px 0px 0px;
+}
+
+/*DAFTAR*/
+.daftar {
+	background-image: url('img/bg2.jpg');
+	background-size: cover;
+	height: 650px;
+	text-align: center;
+	position: relative;
+	margin-bottom: -50px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+.daftar .container {
+	color: white;
+	margin-top: 50px;
+}
+.daftar h3, h6 {
+	text-align: left;
+}
+.daftar h6 {
+	font-weight: 200;
+	font-size: 20px;
+}
+.daftar .signup {
+	background-color: transparent;
+	border: 3px solid white;
+	color: white;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	font-weight: 400;
+}
+.daftar .signup:hover {
+	background-color: white;
+	color: black;
+	text-shadow: 0px 0px 0px;
+}
+.daftar form .form-row{
+	margin-top: 5px;
+}
+.daftar a {
+	color: white;
+}
+.footer2 {
+	color: white;
+	margin-top: -50px;
+	bottom: 0;
+	text-shadow: 1px, 1px, 1px, rgba(0,0,0,1);
+}
+
+/*INFO PANEL*/
+.info-panel {
+	box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+	border-radius: 12px;
+	background-color: white;
+	margin-top: -100px;
+	padding: 30px; 
+}
+.info-panel h4 {
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+.info-panel p {
+	font-size: 12px;
+	color: #acacac;
+	margin-top: -5px;
+	font-weight: 200;
+}
+.info-panel img {
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+/*TESTIMONI*/
+.testimoni {
+	margin-top: 80px;
+	text-align: center;
+}
+.testimoni img {
+	width: 240px;
+	height: 236px;
+	border-radius: 12px;
+}
+.testimoni h3, p {
+	margin-left: -50px;
+}
+.testimoni h3 {
+	margin-top: 50px;
+}
+.testimoni p {
+	margin-top: 5px;
+}
+.testimoni span {
+	font-weight: 310;
+}
+
+/*FOOTER*/
+.footer1 {
+	margin-top: 50px;
+	background-color: #ff66ff;
+	color: white;
+	padding-top: 20px;
+}
+footer p {
+	font-size: 18px;
+	font-weight: 500;
+}
+footer a {
+	color: white;
+}
+footer a:hover {
+	color: white;
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 992px) {
+	.nav-link, .navbar-brand {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #ffffff;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.jumbotron {
+		margin-top: -75px;
+	}
+	.testimoni {
+		text-align: left;
+	}
+	.jumbotron .signup {
+		width: 350px;
+	}
+}
